@@ -10,7 +10,6 @@
 
 #import "NSObject+GetSearchValue.h"
 
-#import "ChineseToPinyin.h"
 
 @implementation ZCSearchBarView{
     
@@ -47,9 +46,9 @@
             
             if ([self zhongwen:searchText]) {
                 
-                searchText = [ChineseToPinyin pinyinFromChiniseString:searchText];
+                searchText = [self pinyinFromChiniseString:searchText];
                 
-                //如果str第一个字符是英文, 取出第一个字母, 转成大写字母
+                
             }else if ([self yingwen:searchText]) {
                 
                 searchText = [searchText uppercaseString];
@@ -81,11 +80,11 @@
     
     if (searchText.length > 0) {
         
-        self.searchResult(_searchResultArr,YES);
+        self.searchResult(_searchResultArr);
         
     }else{
         
-        self.searchResult(_searchResultArr,NO);
+        self.searchResult(_dataArr);
 
     }
 }
@@ -151,6 +150,24 @@
     BOOL a = [passWordPredicate evaluateWithObject:[str substringToIndex:1]];
     
     return a ;
+}
+
+
+- (NSString *)pinyinFromChiniseString:(NSString *)string{
+    
+    NSString *hanziText = string;
+    NSMutableString *ms = [[NSMutableString alloc] initWithString:hanziText];
+    if ([hanziText length]) {
+        if (CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformMandarinLatin, NO)) {
+            //                            PPLog(@"pinyin: %@", ms);
+        }
+        if (CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformStripDiacritics, NO)) {
+            //                            PPLog(@"pinyin: %@", ms);
+        }
+    }
+    
+    return [[NSString alloc] initWithString:ms];
+    
 }
 
 @end

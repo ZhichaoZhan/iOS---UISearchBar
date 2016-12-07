@@ -70,16 +70,12 @@
     search.searchKyeArr = @[@"name",@"phone",@"age"];
     [self.view addSubview:search];
     
-    search.searchResult = ^(NSMutableArray *result,BOOL isSearch){
+    search.searchResult = ^(NSMutableArray *result){
         
-        if (isSearch) {
+       
             
-            _dataArr = result;
-            
-        }else{
-            
-            _dataArr = muarr;
-        }
+        _dataArr = muarr;
+        
         
         [_tableView reloadData];
     };

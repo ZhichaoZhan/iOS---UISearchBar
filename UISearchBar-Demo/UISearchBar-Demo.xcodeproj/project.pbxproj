@@ -15,10 +15,9 @@
 		CD8016DC1D98FF7400567DC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8016DA1D98FF7400567DC6 /* LaunchScreen.storyboard */; };
 		CD8016E71D98FF7400567DC6 /* UISearchBar_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8016E61D98FF7400567DC6 /* UISearchBar_DemoTests.m */; };
 		CD8016F21D98FF7400567DC6 /* UISearchBar_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8016F11D98FF7400567DC6 /* UISearchBar_DemoUITests.m */; };
-		CD8017051D99049B00567DC6 /* NSObject+GetSearchValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8017001D99049B00567DC6 /* NSObject+GetSearchValue.m */; };
-		CD8017061D99049B00567DC6 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8017021D99049B00567DC6 /* ChineseToPinyin.m */; };
 		CD8017071D99049B00567DC6 /* ZCSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8017041D99049B00567DC6 /* ZCSearchBarView.m */; };
 		CD80170B1D99050A00567DC6 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD80170A1D99050A00567DC6 /* UserModel.m */; };
+		CDCAEF881DF7FBF000053C15 /* NSObject+GetSearchValue.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCAEF871DF7FBF000053C15 /* NSObject+GetSearchValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +54,12 @@
 		CD8016ED1D98FF7400567DC6 /* UISearchBar-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UISearchBar-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8016F11D98FF7400567DC6 /* UISearchBar_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UISearchBar_DemoUITests.m; sourceTree = "<group>"; };
 		CD8016F31D98FF7400567DC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD8016FF1D99049B00567DC6 /* NSObject+GetSearchValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GetSearchValue.h"; sourceTree = "<group>"; };
-		CD8017001D99049B00567DC6 /* NSObject+GetSearchValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GetSearchValue.m"; sourceTree = "<group>"; };
-		CD8017011D99049B00567DC6 /* ChineseToPinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyin.h; sourceTree = "<group>"; };
-		CD8017021D99049B00567DC6 /* ChineseToPinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyin.m; sourceTree = "<group>"; };
 		CD8017031D99049B00567DC6 /* ZCSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSearchBarView.h; sourceTree = "<group>"; };
 		CD8017041D99049B00567DC6 /* ZCSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSearchBarView.m; sourceTree = "<group>"; };
 		CD8017091D99050A00567DC6 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		CD80170A1D99050A00567DC6 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		CDCAEF861DF7FBF000053C15 /* NSObject+GetSearchValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GetSearchValue.h"; sourceTree = "<group>"; };
+		CDCAEF871DF7FBF000053C15 /* NSObject+GetSearchValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GetSearchValue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,10 +155,8 @@
 		CD8017081D9904A000567DC6 /* 搜索🔍 */ = {
 			isa = PBXGroup;
 			children = (
-				CD8016FF1D99049B00567DC6 /* NSObject+GetSearchValue.h */,
-				CD8017001D99049B00567DC6 /* NSObject+GetSearchValue.m */,
-				CD8017011D99049B00567DC6 /* ChineseToPinyin.h */,
-				CD8017021D99049B00567DC6 /* ChineseToPinyin.m */,
+				CDCAEF861DF7FBF000053C15 /* NSObject+GetSearchValue.h */,
+				CDCAEF871DF7FBF000053C15 /* NSObject+GetSearchValue.m */,
 				CD8017031D99049B00567DC6 /* ZCSearchBarView.h */,
 				CD8017041D99049B00567DC6 /* ZCSearchBarView.m */,
 			);
@@ -301,9 +296,8 @@
 				CD8016D41D98FF7400567DC6 /* ViewController.m in Sources */,
 				CD8017071D99049B00567DC6 /* ZCSearchBarView.m in Sources */,
 				CD80170B1D99050A00567DC6 /* UserModel.m in Sources */,
-				CD8017061D99049B00567DC6 /* ChineseToPinyin.m in Sources */,
 				CD8016D11D98FF7400567DC6 /* AppDelegate.m in Sources */,
-				CD8017051D99049B00567DC6 /* NSObject+GetSearchValue.m in Sources */,
+				CDCAEF881DF7FBF000053C15 /* NSObject+GetSearchValue.m in Sources */,
 				CD8016CE1D98FF7400567DC6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

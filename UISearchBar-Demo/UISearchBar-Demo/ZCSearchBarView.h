@@ -26,6 +26,6 @@
 @property (nonatomic,strong)UIColor *borderColor;
 
 
-@property (nonatomic,copy)void(^searchResult)(NSMutableArray *result,BOOL isSearch);
+@property (nonatomic,copy)void(^searchResult)(NSMutableArray *result);
 
 @end
